@@ -90,16 +90,9 @@ Library-System/
 
 
 
-## 📷 Screenshots
+## website link
+## https://libsystem-mini-clg-project.onrender.com
 
-### Home Dashboard
-![Home](screenshots/home.png)
-
-### Categories
-![Categories](screenshots/categories.png)
-
-### Search
-![Search](screenshots/search.png)
 
 
 ## 🎯 Learning Outcomes
