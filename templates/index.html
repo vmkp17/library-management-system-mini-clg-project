@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="hero">
+
+    <h1>Library Management System</h1>
+
+    <p>
+        A modern library information system built using Python, Flask and SQLite.
+    </p>
+
+</div>
+
+<div class="row g-4">
+
+    <div class="col-lg-6">
+
+        <div class="dashboard-card">
+
+            <h2>{{ total_books }}</h2>
+
+            <h4>Total Books</h4>
+
+            <p>
+                Books currently stored in the database.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="col-lg-6">
+
+        <div class="dashboard-card">
+
+            <h2>{{ total_categories }}</h2>
+
+            <h4>Categories</h4>
+
+            <p>
+                Different categories available in the library.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="text-center mt-5">
+
+    <a href="/categories" class="custom-btn">
+        Browse Categories
+    </a>
+
+    <a href="/search" class="custom-btn">
+        Search Books
+    </a>
+
+</div>
+
+<div class="row mt-5 g-4">
+
+    <div class="col-md-4">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-layer-group"></i>
+
+            <h5>Categories</h5>
+
+            <p>
+                Browse books organised into different categories.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <h5>Search</h5>
+
+            <p>
+                Find books using Book ID, Title, Author or Publisher.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-4">
+
+        <div class="feature-card">
+
+            <i class="fa-solid fa-chart-simple"></i>
+
+            <h5>Statistics</h5>
+
+            <p>
+                View total books and category-wise statistics.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

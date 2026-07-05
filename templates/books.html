@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="hero">
+
+<h1>{{ category }}</h1>
+
+<p>
+
+Books available under this category.
+
+</p>
+
+</div>
+
+<div class="dashboard-card">
+
+<table class="table table-dark align-middle mb-0">
+
+<thead>
+
+<tr>
+
+<th>Book ID</th>
+
+<th>Book Name</th>
+
+<th>Author</th>
+
+<th>Publisher</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+{% for book in books %}
+
+<tr>
+
+<td>{{ book.book_id }}</td>
+
+<td>{{ book.book_name }}</td>
+
+<td>{{ book.author }}</td>
+
+<td>{{ book.publisher }}</td>
+
+</tr>
+
+{% endfor %}
+
+</tbody>
+
+</table>
+
+</div>
+
+{% endblock %}

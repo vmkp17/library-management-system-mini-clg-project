@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="hero">
+
+    <h1>Book Categories</h1>
+
+    <p>
+        Select a category to view available books.
+    </p>
+
+</div>
+
+<div class="row g-4">
+
+{% for category in categories %}
+
+<div class="col-lg-4">
+
+<div class="feature-card">
+
+<h5>{{ category }}</h5>
+
+<p>
+
+View books available under this category.
+
+</p>
+
+<a href="/books/{{ category }}" class="custom-btn">
+
+Open Category
+
+</a>
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}
